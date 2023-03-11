@@ -1,3 +1,3 @@
 Jakub Kozanecki
 
-Główny funkcje w branchu "master"
+Główna aplikacja w branchu "master"
