@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+      integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+      integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+      crossorigin=""
+    ></script>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Trip app</title>
+  </head>
+  <body>
+    <header>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__list-item home">Home (map view)</li>
+          <li class="nav__list-item new-trip">New trip</li>
+          <li class="nav__list-item list-page">List of trips</li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="page">
+      <div class="new-trip-panel hidden">
+        <div class="new-trip-panel__option">
+          <label for="trip-name">Trip name</label>
+          <input type="text" class="trip-name" />
+        </div>
+
+        <div class="new-trip-panel__option">
+          <label for="trip-name">Start of Trip</label>
+          <input type="date" class="trip-date" />
+        </div>
+
+        <div class="new-trip-panel__option">
+          <label for="trip-name">End of trip</label>
+          <input type="date" class="trip-date-e" />
+        </div>
+
+        <div class="new-trip-panel__option">
+          <label for="trip-name">Description</label>
+          <textarea type="text" class="trip-desc" rows="20"></textarea>
+        </div>
+
+        <button class="btn submit">ADD</button>
+        <button class="btn dismiss">CANCEL</button>
+      </div>
+    </div>
+    <div class="map-view" id="map"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
